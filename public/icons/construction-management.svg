@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+  <style>
+    .primary-fill { fill: #EAB308; }  /* Tailwind yellow-500 */
+    .outline { fill: none; stroke: #2B2B2B; stroke-width: 1.5; stroke-linecap: round; stroke-linejoin: round; }
+  </style>
+  <g>
+    <path class="primary-fill" d="M21 8.5l-9-6-9 6v11a2 2 0 002 2h14a2 2 0 002-2v-11z"/>
+    <path class="outline" d="M21 8.5l-9-6-9 6v11a2 2 0 002 2h14a2 2 0 002-2v-11z"/>
+    <path class="outline" d="M3 8.5l9-6 9 6"/>
+    <path class="outline" d="M12 20v-7.5"/>
+    <path class="outline" d="M9 12.5h6"/>
+    <circle class="primary-fill" cx="12" cy="5" r="1"/>
+    <path class="outline" d="M7 20h10"/>
+  </g>
+</svg> 

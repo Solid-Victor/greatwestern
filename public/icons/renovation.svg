@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+  <style>
+    .primary-fill { fill: #EAB308; }
+    .outline { fill: none; stroke: #2B2B2B; stroke-width: 1.5; stroke-linecap: round; stroke-linejoin: round; }
+  </style>
+  <g>
+    <path class="primary-fill" d="M2 20h20v2H2z"/>
+    <path class="outline" d="M2 20h20v2H2z"/>
+    <path class="primary-fill" d="M4 2h4v18H4z"/>
+    <path class="outline" d="M4 2h4v18H4z"/>
+    <path class="primary-fill" d="M16 2h4v18h-4z"/>
+    <path class="outline" d="M16 2h4v18h-4z"/>
+    <path class="outline" d="M10 8h4"/>
+    <path class="outline" d="M10 12h4"/>
+    <path class="outline" d="M10 16h4"/>
+  </g>
+</svg> 
