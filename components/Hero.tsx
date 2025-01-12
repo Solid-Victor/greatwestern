@@ -96,7 +96,7 @@ const Hero = () => {
   };
 
   return (
-    <div className="relative h-screen w-full overflow-hidden">
+    <div className="relative h-screen w-[100vw] overflow-hidden">
       {/* Video Background */}
       <video
         autoPlay

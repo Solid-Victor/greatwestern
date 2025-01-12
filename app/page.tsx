@@ -25,7 +25,7 @@ const Home = () => {
   return (
     <>
       <Hero />
-      <div className="max-w-7xl w-full">
+      <div className="max-w-7xl w-[100vw]">
         <Grid />
         <RecentProjects />
         <Clients />
