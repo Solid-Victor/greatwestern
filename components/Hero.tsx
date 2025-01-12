@@ -1,9 +1,11 @@
 "use client"
 
+// import dynamic from "next/dynamic";
 import { useEffect, useRef, useState } from "react";
-// import gsap from "gsap";
-const gsap = dynamic(() => import('gsap'), { ssr: false });
-const ScrollTrigger = dynamic(() => import('gsap/ScrollTrigger'), { ssr: false });
+import gsap from "gsap";
+import ScrollTrigger from "gsap/ScrollTrigger";
+// const gsap = dynamic(() => import('gsap'), { ssr: false });
+// const ScrollTrigger = dynamic(() => import('gsap/ScrollTrigger'), { ssr: false });
 import { Button } from "@/components/ui/Button";
 import { useRouter } from "next/navigation";
 
