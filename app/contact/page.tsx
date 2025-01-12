@@ -93,8 +93,8 @@ export default function ContactPage() {
         >
           <HeaderText title="Let&apos;s get in" highlight="Touch" />
           <p className="text-gray-400 max-w-2xl mx-auto">
-            Have a project in mind? We'd love to hear from you. Send us a message
-            and we'll respond as soon as possible.
+            Have a project in mind? We&apos;d love to hear from you. Send us a message
+            and we&apos;ll respond as soon as possible.
           </p>
         </motion.div>
 

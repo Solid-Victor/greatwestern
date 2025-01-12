@@ -116,7 +116,7 @@ export default function ProjectsPage() {
             Have a Project in Mind?
           </h2>
           <p className="text-gray-400 mb-8">
-            Let's discuss how we can bring your vision to life
+            Let&apos;s discuss how we can bring your vision to life
           </p>
           <Button>
             Contact Us

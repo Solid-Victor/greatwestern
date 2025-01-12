@@ -119,8 +119,8 @@ const AboutPage = () => {
           <h2 className="text-3xl font-bold text-white mb-4">
             Ready to Start Your Project?
           </h2>
-          <p className="text-gray-400 mb-8 max-w-2xl mx-auto">
-            Let's work together to bring your construction vision to life. Our team of experts
+          <p className="text-gray-400 mb-8">
+            Let&apos;s work together to bring your construction vision to life. Our team of experts
             is ready to help you achieve your goals.
           </p>
           <Button onClick={() => window.location.href = '/contact'}>
