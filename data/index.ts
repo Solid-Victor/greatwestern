@@ -55,22 +55,22 @@ export const workExperience = [
 export const socialMedia = [
   {
     id: 1,
-    img: "/facebook.svg",
-    link: "https://facebook.com",
+    img: "/wha.svg",
+    link: "https://whatsapp.com",
   },
   {
     id: 2,
-    img: "/twitter.svg",
+    img: "/twit.svg",
     link: "https://twitter.com",
   },
   {
     id: 3,
-    img: "/linkedin.svg",
+    img: "/link.svg",
     link: "https://linkedin.com",
   },
   {
     id: 4,
-    img: "/instagram.svg",
+    img: "/insta.svg",
     link: "https://instagram.com",
   },
 ];

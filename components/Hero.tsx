@@ -11,7 +11,7 @@ import { useRouter } from "next/navigation";
 
 const carouselData = [
   {
-    title: "Building Tomorrow&apos;s",
+    title: "Building Tomorrow's",
     highlight: "Infrastructure",
     description: "Excellence in construction solutions for your most ambitious projects",
     video: "/construction-video.mp4",
