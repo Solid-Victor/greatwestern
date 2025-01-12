@@ -225,6 +225,12 @@ export function Globe({ globeConfig, data }: WorldProps) {
     };
   }, [globeRef.current, globeData]);
 
+  useEffect(() => {
+    // Your effect code
+  }, [_buildData, _buildMaterial, defaultProps.atmosphereAltitude, 
+      defaultProps.atmosphereColor, defaultProps.polygonColor, 
+      defaultProps.showAtmosphere, startAnimation]);
+
   return (
     <>
       <threeGlobe ref={globeRef} />

@@ -1,6 +1,7 @@
 // pages/services.js
 import React from 'react';
 import { services } from '@/data'; // Adjust the path to where your data file is stored
+import Image from 'next/image';
 
 export default function ServicesPage() {
   return (
@@ -15,10 +16,12 @@ export default function ServicesPage() {
               key={index}
               className="bg-white rounded-lg shadow-md p-6 text-center hover:shadow-lg transition-shadow duration-300"
             >
-              <img
+              <Image
                 src={service.icon}
                 alt={service.title}
                 className="w-16 h-16 mx-auto mb-4"
+                width={24}
+                height={24}
               />
               <h2 className="text-2xl font-semibold text-gray-800 mb-2">
                 {service.title}

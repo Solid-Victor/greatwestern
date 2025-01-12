@@ -91,7 +91,7 @@ export default function ContactPage() {
           animate={{ opacity: 1, y: 0 }}
           className="text-center mb-12"
         >
-          <HeaderText title="Get in" highlight="Touch" />
+          <HeaderText title="Let&apos;s get in" highlight="Touch" />
           <p className="text-gray-400 max-w-2xl mx-auto">
             Have a project in mind? We'd love to hear from you. Send us a message
             and we'll respond as soon as possible.

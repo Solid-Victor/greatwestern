@@ -8,14 +8,6 @@ export const navItems = [
     link: "/",
   },
   {
-    name: "Projects",
-    link: "/projects",
-  },
-  {
-    name: "Services",
-    link: "/services",
-  },
-  {
     name: "About",
     link: "/about",
   },
@@ -23,6 +15,14 @@ export const navItems = [
     name: "Contact",
     link: "/contact",
   },
+  {
+    name: "Projects",
+    link: "/projects",
+  },
+  {
+    name: "Services",
+    link: "/services",
+  }
 ];
 
 export const workExperience = [
