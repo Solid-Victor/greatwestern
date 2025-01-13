@@ -172,7 +172,7 @@ const MobileNav = ({ isOpen, navItems, pathname, onClose }: {
 export const FloatingNav = ({ navItems }: { navItems: NavItem[] }) => {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isOpen, setIsOpen] = useState(false);
-  const pathname = usePathname();
+  const pathname = usePathname() ?? '/';
 
   useEffect(() => {
     const handleScroll = () => setIsScrolled(window.scrollY > 50);

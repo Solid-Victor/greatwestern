@@ -7,6 +7,7 @@ const FloatingNav = dynamic(() => import("@/components/ui/FloatingNavbar"), {
 const Footer = dynamic(() => import("@/components/Footer"), { ssr: false });
 import "./globals.css";
 import { ThemeProvider } from "./provider";
+import Layout from '@/components/Layout';
 
 const inter = Inter({ subsets: ["latin"] });
 import { navItems } from "@/data";
@@ -17,9 +18,9 @@ export const metadata: Metadata = {
 
 export default function RootLayout({
   children,
-}: Readonly<{
+}: {
   children: React.ReactNode;
-}>) {
+}) {
   return (
     <html lang="en" className={inter.className} suppressHydrationWarning>
       <head>
@@ -40,12 +41,12 @@ export default function RootLayout({
           enableSystem
           disableTransitionOnChange
         >
-          <FloatingNav navItems={navItems} />
-
-          <main className="relative bg-[rgba(10,15,25,1)] flex justify-center items-center flex-col overflow-hidden mx-auto sm:px-10 px-5">
-            {children}
-            <Footer />
-          </main>
+          <Layout>
+            <main className="relative bg-[rgba(10,15,25,1)] flex justify-center items-center flex-col overflow-hidden mx-auto sm:px-10 px-5">
+              {children}
+              <Footer />
+            </main>
+          </Layout>
         </ThemeProvider>
       </body>
     </html>
