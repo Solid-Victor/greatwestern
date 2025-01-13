@@ -4,6 +4,7 @@ import { motion } from "framer-motion";
 import Image from "next/image";
 import { Button } from "@/components/ui/Button";
 import HeaderText from "@/components/ui/HeaderText";
+import { useTransform } from "framer-motion";
 
 const AboutPage = () => {
   return (
@@ -60,10 +61,23 @@ const AboutPage = () => {
             { number: "100+", label: "Expert Team" },
             { number: "50+", label: "Awards Won" },
           ].map((stat, index) => (
-            <div key={index} className="text-center">
-              <h4 className="text-4xl font-bold text-yellow-500 mb-2">{stat.number}</h4>
+            <motion.div
+              key={index}
+              initial={{ scale: 0.5, opacity: 0 }}
+              whileInView={{ scale: 1, opacity: 1 }}
+              viewport={{ once: true }}
+              className="stats-card"
+            >
+              <motion.span
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 1 }}
+                transition={{ duration: 2 }}
+                className="text-4xl font-bold text-yellow-500"
+              >
+                {stat.number}
+              </motion.span>
               <p className="text-gray-400">{stat.label}</p>
-            </div>
+            </motion.div>
           ))}
         </motion.div>
 

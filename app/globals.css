@@ -14,12 +14,32 @@
 }
 
 .glass-effect {
-  background: linear-gradient(to bottom, rgb(17, 24, 39), rgb(17, 24, 39));
-  backdrop-filter: blur(8px);
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
 }
 
 @layer utilities {
   .text-balance {
     text-wrap: balance;
   }
+}
+
+/* Add smooth scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Add custom scrollbar */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: rgba(17,24,39,1);
+}
+
+::-webkit-scrollbar-thumb {
+  background: #EAB308;
+  border-radius: 5px;
 }

@@ -119,7 +119,7 @@ const Hero = () => {
       {/* Content */}
       <div className="relative z-20 h-full flex items-center justify-center">
         <div className="relative z-10 max-w-7xl mx-auto px-4 text-center text-white mt-50">
-          <h1 className="hero-title text-5xl md:text-7xl font-bold mb-6 ">
+          <h1 className="hero-title text-5xl md:text-7xl font-bold mb-6">
             {carouselData[activeIndex].title}{" "}
             <span className="text-yellow-500">
               {carouselData[activeIndex].highlight}

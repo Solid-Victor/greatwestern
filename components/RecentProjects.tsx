@@ -6,6 +6,7 @@ import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { projects } from "@/data";
 import HeaderText from "@/components/ui/HeaderText";
+import { motion } from "framer-motion";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -70,33 +71,44 @@ const RecentProjects = () => {
         {/* Projects Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {filteredProjects.map((project, index) => (
-            <div
+            <motion.div
               key={index}
-              className="project-card group relative overflow-hidden rounded-lg shadow-lg bg-[rgba(17,24,39,1)]"
+              whileHover={{ scale: 1.02 }}
+              whileTap={{ scale: 0.98 }}
+              className="project-card group relative overflow-hidden rounded-xl shadow-2xl"
             >
-              <div className="relative h-64">
-                <Image
-                  src={project.image}
-                  alt={project.title}
-                  fill
-                  className="object-cover transition-transform duration-300 group-hover:scale-110"
-                />
-                <div className="absolute inset-0 bg-black opacity-0 group-hover:opacity-50 transition-opacity duration-300" />
-              </div>
-
-              <div className="absolute bottom-0 left-0 right-0 p-6 text-white transform translate-y-full group-hover:translate-y-0 transition-transform duration-300">
-                <div className="bg-[rgba(17,24,39,0.95)] backdrop-blur-sm p-4 rounded-lg">
-                  <h3 className="text-xl font-semibold mb-2">{project.title}</h3>
-                  <p className="text-sm text-gray-300">{project.description}</p>
-                  <span className="inline-block mt-3 text-yellow-500 text-sm">
-                    {project.category}
-                  </span>
+              <div className="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+              
+              <motion.div
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                className="relative z-10 p-6"
+              >
+                <div className="relative h-64">
+                  <Image
+                    src={project.image}
+                    alt={project.title}
+                    fill
+                    className="object-cover transition-transform duration-300 group-hover:scale-110"
+                  />
+                  <div className="absolute inset-0 bg-black opacity-0 group-hover:opacity-50 transition-opacity duration-300" />
                 </div>
-              </div>
-          </div>
-        ))}
+
+                <div className="absolute bottom-0 left-0 right-0 p-6 text-white transform translate-y-full group-hover:translate-y-0 transition-transform duration-300">
+                  <div className="bg-[rgba(17,24,39,0.95)] backdrop-blur-sm p-4 rounded-lg">
+                    <h3 className="text-xl font-semibold mb-2">{project.title}</h3>
+                    <p className="text-sm text-gray-300">{project.description}</p>
+                    <span className="inline-block mt-3 text-yellow-500 text-sm">
+                      {project.category}
+                    </span>
+                  </div>
+                </div>
+              </motion.div>
+            </motion.div>
+          ))}
+        </div>
       </div>
-    </div>
     </section>
   );
 };

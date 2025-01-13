@@ -3,6 +3,7 @@ import { FaLocationArrow } from "react-icons/fa6";
 import { socialMedia } from "@/data";
 import MagicButton from "./MagicButton";
 import Image from 'next/image';
+import { motion } from "framer-motion";
 
 const Footer = () => {
   return (
@@ -18,15 +19,17 @@ const Footer = () => {
             </p>
             <div className="flex space-x-4">
               {socialMedia.map((info) => (
-                <a
+                <motion.a
                   key={info.id}
                   href={info.link}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="w-10 h-10 flex items-center justify-center rounded-lg bg-[rgba(25,32,47,1)] hover:bg-yellow-500 transition-colors duration-300"
+                  whileHover={{ scale: 1.1, rotate: 5 }}
+                  whileTap={{ scale: 0.9 }}
                 >
                   <Image src={info.img} alt="social" width={24} height={24} />
-                </a>
+                </motion.a>
               ))}
             </div>
           </div>

@@ -107,76 +107,79 @@ export default function ContactPage() {
           >
             <form onSubmit={handleSubmit} className="space-y-6">
               <div>
-                <label htmlFor="name" className="block text-gray-300 mb-2">
-                  Full Name
-                </label>
-                <input
-                  type="text"
-                  id="name"
-                  value={formData.name}
-                  onChange={(e) => setFormData({ ...formData, name: e.target.value })}
-                  className={`w-full p-3 bg-[rgba(25,32,47,1)] text-white rounded-lg focus:outline-none focus:ring-2 ${
-                    errors.name ? 'focus:ring-red-500 border-red-500' : 'focus:ring-yellow-500'
-                  }`}
-                  placeholder="John Doe"
-                />
+                <div className="relative">
+                  <input
+                    id="name"
+                    type="text"
+                    className="peer w-full p-4 pt-8 bg-white/5 backdrop-blur-sm rounded-lg border border-gray-700 focus:border-yellow-500 transition-all duration-300"
+                    placeholder=" "
+                  />
+                  <label
+                    htmlFor="name"
+                    className="absolute left-4 top-2 text-sm text-gray-400 transition-all duration-300 peer-placeholder-shown:top-4 peer-placeholder-shown:text-base peer-focus:top-2 peer-focus:text-sm"
+                  >
+                    Your Name
+                  </label>
+                </div>
                 {errors.name && (
                   <p className="text-red-500 text-sm mt-1">{errors.name}</p>
                 )}
               </div>
 
               <div>
-                <label htmlFor="email" className="block text-gray-300 mb-2">
-                  Email Address
-                </label>
-                <input
-                  type="email"
-                  id="email"
-                  value={formData.email}
-                  onChange={(e) => setFormData({ ...formData, email: e.target.value })}
-                  className={`w-full p-3 bg-[rgba(25,32,47,1)] text-white rounded-lg focus:outline-none focus:ring-2 ${
-                    errors.email ? 'focus:ring-red-500 border-red-500' : 'focus:ring-yellow-500'
-                  }`}
-                  placeholder="john@example.com"
-                />
+                <div className="relative">
+                  <input
+                    id="email"
+                    type="email"
+                    className="peer w-full p-4 pt-8 bg-white/5 backdrop-blur-sm rounded-lg border border-gray-700 focus:border-yellow-500 transition-all duration-300"
+                    placeholder=" "
+                  />
+                  <label
+                    htmlFor="email"
+                    className="absolute left-4 top-2 text-sm text-gray-400 transition-all duration-300 peer-placeholder-shown:top-4 peer-placeholder-shown:text-base peer-focus:top-2 peer-focus:text-sm"
+                  >
+                    Email Address
+                  </label>
+                </div>
                 {errors.email && (
                   <p className="text-red-500 text-sm mt-1">{errors.email}</p>
                 )}
               </div>
 
               <div>
-                <label htmlFor="subject" className="block text-gray-300 mb-2">
-                  Subject
-                </label>
-                <input
-                  type="text"
-                  id="subject"
-                  value={formData.subject}
-                  onChange={(e) => setFormData({ ...formData, subject: e.target.value })}
-                  className={`w-full p-3 bg-[rgba(25,32,47,1)] text-white rounded-lg focus:outline-none focus:ring-2 ${
-                    errors.subject ? 'focus:ring-red-500 border-red-500' : 'focus:ring-yellow-500'
-                  }`}
-                  placeholder="Project Inquiry"
-                />
+                <div className="relative">
+                  <input
+                    id="subject"
+                    type="text"
+                    className="peer w-full p-4 pt-8 bg-white/5 backdrop-blur-sm rounded-lg border border-gray-700 focus:border-yellow-500 transition-all duration-300"
+                    placeholder=" "
+                  />
+                  <label
+                    htmlFor="subject"
+                    className="absolute left-4 top-2 text-sm text-gray-400 transition-all duration-300 peer-placeholder-shown:top-4 peer-placeholder-shown:text-base peer-focus:top-2 peer-focus:text-sm"
+                  >
+                    Subject
+                  </label>
+                </div>
                 {errors.subject && (
                   <p className="text-red-500 text-sm mt-1">{errors.subject}</p>
                 )}
               </div>
 
               <div>
-                <label htmlFor="message" className="block text-gray-300 mb-2">
-                  Message
-                </label>
-                <textarea
-                  id="message"
-                  value={formData.message}
-                  onChange={(e) => setFormData({ ...formData, message: e.target.value })}
-                  className={`w-full p-3 bg-[rgba(25,32,47,1)] text-white rounded-lg focus:outline-none focus:ring-2 ${
-                    errors.message ? 'focus:ring-red-500 border-red-500' : 'focus:ring-yellow-500'
-                  }`}
-                  rows={5}
-                  placeholder="Tell us about your project..."
-                />
+                <div className="relative">
+                  <textarea
+                    id="message"
+                    className="peer w-full p-4 pt-8 bg-white/5 backdrop-blur-sm rounded-lg border border-gray-700 focus:border-yellow-500 transition-all duration-300"
+                    placeholder=" "
+                  />
+                  <label
+                    htmlFor="message"
+                    className="absolute left-4 top-2 text-sm text-gray-400 transition-all duration-300 peer-placeholder-shown:top-4 peer-placeholder-shown:text-base peer-focus:top-2 peer-focus:text-sm"
+                  >
+                    Message
+                  </label>
+                </div>
                 {errors.message && (
                   <p className="text-red-500 text-sm mt-1">{errors.message}</p>
                 )}
