@@ -1,10 +1,6 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  webpack: (config, { isServer }) => {
-    config.ignoreWarnings = [
-      { module: /@opentelemetry/ },
-      { module: /@prisma/ },
-    ];
+  webpack: (config) => {
     config.module.rules.push({
       test: /\.(mp4|webm)$/,
       use: {
