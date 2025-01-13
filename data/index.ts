@@ -153,21 +153,21 @@ export const testimonials = [
     role: "Project Manager",
     company: "Tech Solutions Inc.",
     image: "/testimonials/client1.jpg",
-    testimonial: "Working with this team was an exceptional experience..."
+    quote: "Working with this team was an exceptional experience..."
   },
   {
     name: "Sarah Johnson",
     role: "CEO",
     company: "Innovation Corp",
     image: "/testimonials/client2.jpg",
-    testimonial: "Their attention to detail and commitment to quality..."
+    quote: "Their attention to detail and commitment to quality..."
   },
   {
     name: "Michael Brown",
     role: "Director",
     company: "Development Ltd",
     image: "/testimonials/client3.jpg",
-    testimonial: "The project was delivered on time and exceeded our expectations..."
+    quote: "The project was delivered on time and exceeded our expectations..."
   }
 ];
 
