@@ -1,7 +1,6 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   webpack: (config, { isServer }) => {
-    // Ignore the OpenTelemetry warnings
     config.ignoreWarnings = [
       { module: /@opentelemetry/ },
       { module: /@prisma/ },
