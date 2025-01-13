@@ -1,5 +1,5 @@
 import * as Sentry from "@sentry/nextjs";
 
-export const captureError = (error: Error) => {
+export const onRequestError = (error: Error) => {
   Sentry.captureException(error);
 }; 
