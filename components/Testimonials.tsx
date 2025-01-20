@@ -28,7 +28,7 @@ const Testimonials = () => {
             </div>
             <h4 className="text-xl font-bold text-white mb-2">{testimonial.name}</h4>
             <p className="text-gray-400 mb-2">{testimonial.role}, {testimonial.company}</p>
-            <p className="text-gray-400 italic">"{testimonial.quote}"</p>
+            <p className="text-gray-400 italic">&quot;{testimonial.quote}&quot;</p>
           </motion.div>
         ))}
       </div>
