@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="128" height="128">
+  <style>
+    .primary-fill { fill: #FFD700; }
+    .outline { fill: none; stroke: #FFD700; stroke-width: 2; stroke-linecap: round; stroke-linejoin: round; }
+  </style>
+  <g class="primary-fill">
+    <rect x="12" y="28" width="40" height="24" class="outline"/>
+    <polygon points="32 12 12 28 52 28" class="outline"/>
+    <rect x="20" y="36" width="8" height="8" class="outline"/>
+    <rect x="36" y="36" width="8" height="8" class="outline"/>
+  </g>
+</svg> 

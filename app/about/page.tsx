@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 import Image from "next/image";
 import { Button } from "@/components/ui/Button";
 import HeaderText from "@/components/ui/HeaderText";
-import { useTransform } from "framer-motion";
+import { aboutData } from '@/data';
 
 const AboutPage = () => {
   return (
@@ -24,29 +24,17 @@ const AboutPage = () => {
 
         {/* Vision & Mission */}
         <div className="grid md:grid-cols-2 gap-8 mb-20">
-          <motion.div 
-            initial={{ opacity: 0, x: -20 }}
-            animate={{ opacity: 1, x: 0 }}
-            className="glass-effect p-8 rounded-xl"
-          >
-            <h3 className="text-2xl font-bold text-white mb-4">Our Vision</h3>
-            <p className="text-gray-400">
-              To be the leading construction and engineering company, recognized for excellence, 
-              innovation, and sustainable development practices that shape the future of infrastructure.
-            </p>
-          </motion.div>
-
-          <motion.div 
-            initial={{ opacity: 0, x: 20 }}
-            animate={{ opacity: 1, x: 0 }}
-            className="glass-effect p-8 rounded-xl"
-          >
-            <h3 className="text-2xl font-bold text-white mb-4">Our Mission</h3>
-            <p className="text-gray-400">
-              To deliver exceptional construction and engineering solutions that exceed client expectations,
-              while maintaining the highest standards of safety, quality, and environmental responsibility.
-            </p>
-          </motion.div>
+          {[aboutData.vision, aboutData.mission].map((section, index) => (
+            <motion.div 
+              key={index}
+              initial={{ opacity: 0, x: index === 0 ? -20 : 20 }}
+              animate={{ opacity: 1, x: 0 }}
+              className="glass-effect p-8 rounded-xl"
+            >
+              <h3 className="text-2xl font-bold text-white mb-4">{section.title}</h3>
+              <p className="text-gray-400">{section.description}</p>
+            </motion.div>
+          ))}
         </div>
 
         {/* Company Stats */}
@@ -55,12 +43,7 @@ const AboutPage = () => {
           animate={{ opacity: 1, y: 0 }}
           className="grid grid-cols-2 md:grid-cols-4 gap-8 mb-20"
         >
-          {[
-            { number: "25+", label: "Years Experience" },
-            { number: "500+", label: "Projects Completed" },
-            { number: "100+", label: "Expert Team" },
-            { number: "50+", label: "Awards Won" },
-          ].map((stat, index) => (
+          {aboutData.stats.map((stat, index) => (
             <motion.div
               key={index}
               initial={{ scale: 0.5, opacity: 0 }}
@@ -85,23 +68,7 @@ const AboutPage = () => {
         <div className="mb-20">
           <HeaderText title="Our" highlight="Leadership" className="mb-12" />
           <div className="grid md:grid-cols-3 gap-8">
-            {[
-              {
-                name: "John Smith",
-                role: "CEO & Founder",
-                image: "/team/ceo.jpg"
-              },
-              {
-                name: "Sarah Johnson",
-                role: "Chief Engineer",
-                image: "/team/engineer.jpg"
-              },
-              {
-                name: "Michael Chen",
-                role: "Project Director",
-                image: "/team/director.jpg"
-              }
-            ].map((member, index) => (
+            {aboutData.team.map((member, index) => (
               <motion.div
                 key={index}
                 initial={{ opacity: 0, y: 20 }}

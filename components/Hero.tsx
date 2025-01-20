@@ -102,16 +102,20 @@ const Hero = () => {
   return (
     <div className="relative h-screen w-[100vw] overflow-hidden">
       {/* Video Background */}
-      <video
-        autoPlay
-        muted
-        loop
-        playsInline
-        className="absolute top-0 left-0 w-full h-full object-cover z-0"
-      >
-        <source src="/construction-video.mp4" type="video/mp4" />
-        Your browser does not support the video tag.
-      </video>
+      {carouselData.map((item, index) => (
+        <video
+          key={index}
+          ref={(el) => {
+            videoRefs.current[index] = el;
+          }}
+          src={item.video}
+          autoPlay
+          muted
+          loop
+          playsInline
+          className={`absolute top-0 left-0 w-full h-full object-cover z-0 transition-opacity duration-1000 ${activeIndex === index ? 'opacity-100' : 'opacity-0'}`}
+        />
+      ))}
 
       {/* Overlay */}
       <div className="absolute inset-0 bg-black/50 z-10" />

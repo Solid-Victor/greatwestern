@@ -4,6 +4,7 @@ import { motion } from "framer-motion";
 import { useState } from "react";
 import { Button } from "@/components/ui/Button";
 import HeaderText from "@/components/ui/HeaderText";
+import { contactData } from "@/data";
 
 interface FormData {
   name: string;
@@ -84,7 +85,7 @@ export default function ContactPage() {
   };
 
   return (
-    <div className="min-h-screen bg-[rgba(10,15,25,1)] pt-24">
+    <div className="min-h-screen bg-[rgba(10,15,25,1)] pt-24 w-80%">
       <div className="container mx-auto py-12 px-6">
         <motion.div 
           initial={{ opacity: 0, y: 20 }}
@@ -226,7 +227,7 @@ export default function ContactPage() {
                 </div>
                 <div>
                   <h3 className="text-white font-semibold">Address</h3>
-                  <p className="text-gray-400">123 Construction Way, Building City, BC 12345</p>
+                  <p className="text-gray-400">{contactData.address}</p>
                 </div>
               </div>
 
@@ -238,7 +239,7 @@ export default function ContactPage() {
                 </div>
                 <div>
                   <h3 className="text-white font-semibold">Email</h3>
-                  <p className="text-gray-400">victorconetns@gmail.com</p>
+                  <p className="text-gray-400">{contactData.email}</p>
                 </div>
               </div>
 
@@ -250,7 +251,7 @@ export default function ContactPage() {
                 </div>
                 <div>
                   <h3 className="text-white font-semibold">Phone</h3>
-                  <p className="text-gray-400">(123) 456-7890</p>
+                  <p className="text-gray-400">{contactData.phone}</p>
                 </div>
               </div>
 

@@ -36,7 +36,6 @@ export default function ServicesPage() {
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: index * 0.1 }}
               className="glass-effect rounded-xl p-8 hover:shadow-2xl transition-all duration-300"
-              
             >
               <div className="flex items-start gap-6">
                 <div className="w-16 h-16 relative flex-shrink-0">

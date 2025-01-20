@@ -1,3 +1,5 @@
+import { MdReduceCapacity } from "react-icons/md";
+
 export const gridItems = [
   // Your original grid items data
 ];
@@ -29,7 +31,7 @@ export const workExperience = [
   {
     id: 1,
     title: "Commercial Construction",
-    desc: "25+ years experience in office buildings and retail spaces",
+    desc: "Years experience in office buildings and retail spaces",
     thumbnail: "/icons/commercial.svg"
   },
   {
@@ -56,7 +58,7 @@ export const socialMedia = [
   {
     id: 1,
     img: "/wha.svg",
-    link: "https://whatsapp.com",
+    link: "https://business.facebook.com/latest/settings/pages?business_id=3963634953865092",
   },
   {
     id: 2,
@@ -71,40 +73,40 @@ export const socialMedia = [
   {
     id: 4,
     img: "/insta.svg",
-    link: "https://instagram.com",
+    link: "https://www.instagram.com/gwfa.rms55/",
+  },
+  {
+    id: 5,
+    img: "/icons/facebook.svg",
+    link: "https://web.facebook.com/profile.php?id=61572494870965",
   },
 ];
 
 export const services = [
   {
-    title: 'Construction Management',
-    description: 'Strategic planning and execution of construction projects',
-    icon: '/icons/construction-management.svg'
+    title: "Strong Production Capacity",
+    description: `Empower your solar needs with our robust production capabilities, ensuring large-scale output and consistent quality to meet your demands efficiently.`,
+    icon: "/icons/production.svg"
   },
   {
-    title: 'Architecture Design',
-    description: 'Innovative architectural solutions for modern construction needs',
-    icon: '/icons/architecture.svg'
+    title: "Top Quality With Affordable Price",
+    description: `Experience superior solar inverters, solar panels, and solar power systems, that deliver reliable performance and durability, all at a cost-effective price point.`,
+    icon: "/icons/top-quality.svg"
   },
   {
-    title: 'Civil Engineering',
-    description: 'Expert civil engineering services for infrastructure projects',
-    icon: '/icons/civil-engineering.svg'
+    title: "Flexible MOQ and Swift Delivery",
+    description: `Adaptable minimum order quantities coupled with rapid delivery options ensure you get what you need, when you need it.`,
+    icon: "/icons/delivery.svg"
   },
   {
-    title: 'Project Planning',
-    description: 'Comprehensive project planning and feasibility studies',
-    icon: '/icons/project-planning.svg'
+    title: "Industry-Leading Certifications",
+    description: `Our solar products come with top industry certifications, offering you and your clients the assurance of safety and quality.`,
+    icon: "/icons/industry-certification.svg"
   },
   {
-    title: 'Renovation Services',
-    description: 'Professional renovation and remodeling solutions',
-    icon: '/icons/renovation.svg'
-  },
-  {
-    title: 'Safety Consulting',
-    description: 'Construction safety consulting and risk management',
-    icon: '/icons/safety.svg'
+    title: "Full Service & Support",
+    description: `From pre-sales consultations to after-sales technical support, we’ve got you covered every step of the way.`,
+    icon: "/icons/support.svg"
   }
 ];
 
@@ -124,51 +126,133 @@ export const projects = [
   {
     title: 'Solar Facility',
     description: 'State-of-the-art industrial manufacturing plant',
-    image: '/projects/construction-3.jpg',
+    image: '/projects/solar-1.jpg',
     category: 'Industrial',
   },
   {
     title: 'Smart Solar Development',
     description: 'Mixed-use development with integrated technology',
-    image: '/projects/solar-1.jpg',
+    image: '/projects/solar-2.jpg',
     category: 'Commercial',
   },
   {
     title: 'Eco-Friendly Housing',
     description: 'Sustainable residential community with green spaces',
-    image: '/projects/solar-2.jpg',
+    image: '/projects/solar-3.jpg',
     category: 'Residential',
   },
   {
     title: 'Luxury Residential Development',
     description: 'High-end apartment complex with 200 units',
-    image: '/projects/solar-3.jpg',
+    image: '/projects/solar-4.jpg',
     category: 'Residential',
   },
 ];
 
 export const testimonials = [
   {
-    name: "John Smith",
+    name: "Emenike Victor",
     role: "Project Manager",
-    company: "Tech Solutions Inc.",
+    company: "V-SOLID LTD.",
     image: "/testimonials/client1.jpg",
-    quote: "Working with this team was an exceptional experience..."
+    quote: "Working with this team was an exceptional experience. Their attention to detail and commitment to quality were evident in every phase of the project."
   },
   {
     name: "Sarah Johnson",
     role: "CEO",
     company: "Innovation Corp",
     image: "/testimonials/client2.jpg",
-    quote: "Their attention to detail and commitment to quality..."
+    quote: "Their innovative approach and dedication to sustainability set them apart. We are thrilled with the results and look forward to future collaborations."
   },
   {
     name: "Michael Brown",
     role: "Director",
     company: "Development Ltd",
     image: "/testimonials/client3.jpg",
-    quote: "The project was delivered on time and exceeded our expectations..."
+    quote: "The project was delivered on time and exceeded our expectations. The team's professionalism and expertise were outstanding."
   }
 ];
+
+export const aboutData = {
+  vision: {
+    title: "Our Vision",
+    description: "To be the leading construction and engineering company, recognized for excellence, innovation, and sustainable development practices that shape the future of infrastructure."
+  },
+  mission: {
+    title: "Our Mission",
+    description: "To deliver exceptional construction and engineering solutions that exceed client expectations, while maintaining the highest standards of safety, quality, and environmental responsibility."
+  },
+  stats: [
+    { number: "25+", label: "Years Experience" },
+    { number: "500+", label: "Projects Completed" },
+    { number: "100+", label: "Expert Team" },
+    { number: "50+", label: "Awards Won" }
+  ],
+  team: [
+    {
+      name: "John Smith",
+      role: "CEO & Founder",
+      image: "/team/ceo.jpg"
+    },
+    {
+      name: "Mr. Fawole Adebayo",
+      role: "Manager",
+      image: "/team/Manager.jpg"
+    },
+    {
+      name: "Mr. Simeon",
+      role: "Accountant / Consultant",
+      image: "/team/consultant.jpg"
+    },
+    {
+      name: "Barrister Shiaondo",
+      role: "Legal Practitioner",
+      image: "/team/legal-practitioner.jpg"
+    },
+    {
+      name: "Ms. Faith",
+      role: "Secretary",
+      image: "/team/Development-strategist.jpg"
+    },
+    {
+      name: "Mr. Fawole Adebayo",
+      role: "CSO",
+      image: "/team/CSO.jpg"
+    }
+  ]
+};
+
+export const contactData = {
+  address: `B39 Vision Road,Phase 3 Kurudu Army Estate. FCT - Abuja, Nigeria.`,
+  phone: "+234 812-846-8540 | +1 (909) 560-701",
+  email: "info@greatwesternfarmsltd.com.ng",
+  socialMedia: [
+    {
+      platform: "X",
+      link: "https://x.com/solar_grea16889",
+      icon: "/icons/X.svg"
+    },
+    {
+      platform: "x",
+      link: "https://linkedin.com/company",
+      icon: "/icons/linkedin.svg"
+    },
+    {
+      platform: "Instagram",
+      link: "https://www.instagram.com/gwfa.rms55/",
+      icon: "/icons/instagram.svg"
+    },
+    {
+      platform: "Instagram",
+      link: "https://www.instagram.com/gwfa.rms55/",
+      icon: "/icons/instagram.svg"
+    },
+    {
+      platform: "facebook",
+      link: "https://web.facebook.com/profile.php?id=61572494870965",
+      icon: "/icons/facebook.svg"
+    }
+  ]
+};
 
 // Any other original data exports you had

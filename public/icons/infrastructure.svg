@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="128" height="128">
+  <style>
+    .primary-fill { fill: #FFD700; }
+    .outline { fill: none; stroke: #FFD700; stroke-width: 2; stroke-linecap: round; stroke-linejoin: round; }
+  </style>
+  <g class="primary-fill">
+    <path d="M8 48h48v8H8z" class="outline"/>
+    <path d="M16 32h8v16h-8z" class="outline"/>
+    <path d="M32 24h8v24h-8z" class="outline"/>
+    <path d="M48 16h8v32h-8z" class="outline"/>
+  </g>
+</svg> 

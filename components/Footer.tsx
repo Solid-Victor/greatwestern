@@ -1,10 +1,9 @@
 "use client"
-import { FaLocationArrow } from "react-icons/fa6";
 import { socialMedia } from "@/data";
-import MagicButton from "./MagicButton";
+// import MagicButton from "./MagicButton";
 import Image from 'next/image';
 import { motion } from "framer-motion";
-
+import { contactData } from "@/data";
 const Footer = () => {
   return (
     <footer className="w-[100vw] pt-20 pb-10 bg-[rgba(17,24,39,1)]" id="contact">
@@ -15,7 +14,7 @@ const Footer = () => {
           <div className="col-span-1">
             <h3 className="text-xl font-bold text-white mb-4">Great Western</h3>
             <p className="text-gray-400 mb-4">
-              Excellence in construction and engineering solutions since 1995.
+              Excellence in construction and engineering solutions.
             </p>
             <div className="flex space-x-4">
               {socialMedia.map((info) => (
@@ -51,19 +50,18 @@ const Footer = () => {
             <ul className="space-y-2">
               <li className="text-gray-400">
                 <span className="text-yellow-500">Address:</span><br />
-                123 Construction Ave,<br />
-                City, State 12345
+                {contactData.address}
               </li>
               <li className="text-gray-400">
                 <span className="text-yellow-500">Phone:</span><br />
-                (123) 456-7890
+                {contactData.phone}
               </li>
               <li className="text-gray-400">
                 <span className="text-yellow-500">Email:</span><br />
-                info@greatwestern.com
+                {contactData.email}
               </li>
             </ul>
-      </div>
+          </div>
 
           {/* Newsletter */}
           <div className="col-span-1">
