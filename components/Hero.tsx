@@ -8,6 +8,7 @@ import ScrollTrigger from "gsap/ScrollTrigger";
 // const ScrollTrigger = dynamic(() => import('gsap/ScrollTrigger'), { ssr: false });
 import { Button } from "@/components/ui/Button";
 import { useRouter } from "next/navigation";
+import Image from 'next/image';
 
 const carouselData = [
   {
