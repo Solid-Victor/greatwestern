@@ -136,14 +136,14 @@ export const projects = [
     category: 'Commercial',
   },
   {
-    title: 'Eco-Friendly Housing',
-    description: 'Sustainable residential community with green spaces',
+    title: 'Mass Solar Development',
+    description: 'Developing a mass solar project in the heart of Abuja',
     image: '/projects/solar-3.jpg',
     category: 'Residential',
   },
   {
-    title: 'Luxury Residential Development',
-    description: 'High-end apartment complex with 200 units',
+    title: 'Solar Farm',
+    description: 'Solar farm in the heart of Abuja',
     image: '/projects/solar-4.jpg',
     category: 'Residential',
   },
@@ -256,3 +256,6 @@ export const contactData = {
 };
 
 // Any other original data exports you had
+
+
+// <svg width="1em" height="1em" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="w-7 h-7 pointer-events-none !h-6 !w-6 text-base -ml-2 mr-1"><path d="M13.482 10.622L20.04 3h-1.554l-5.693 6.618L8.245 3H3l6.876 10.007L3 21h1.554l6.012-6.989L15.368 21h5.245l-7.131-10.378zm-2.128 2.474l-.697-.997-5.543-7.93H7.5l4.474 6.4.697.996 5.815 8.319h-2.387l-4.745-6.788z" fill="currentcolor"></path></svg>
