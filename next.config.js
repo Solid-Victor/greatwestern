@@ -14,6 +14,13 @@ const nextConfig = {
     });
     return config;
   },
+  basePath: process.env.NEXT_PUBLIC_BASE_PATH || '',
+  images: {
+    domains: ['localhost'], // Add your production domain
+    unoptimized: process.env.NODE_ENV === 'production' ? false : true,
+  },
+  // Enable if using static export
+  output: 'export' 
 };
 
 module.exports = nextConfig;

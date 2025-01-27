@@ -78,7 +78,7 @@ const AboutPage = () => {
               >
                 <div className="relative w-32 h-32 mx-auto mb-4 rounded-full overflow-hidden">
                   <Image
-                    src={member.image}
+                    src={`${process.env.NEXT_PUBLIC_BASE_PATH || ''}${member.image}`}
                     alt={member.name}
                     fill
                     className="object-cover"
